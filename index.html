@@ -8,6 +8,107 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- Profile header -->
+    <header class="profile-header py-4">
+      <div class="container">
+        <div class="d-flex align-items-center gap-3">
+          <img src="assets/profile.jpg" alt="Michael" class="profile-avatar rounded-circle" width="64" height="64">
+          <div>
+            <h1 class="h5 mb-1 fw-bold text-white">Michael</h1>
+            <p class="mb-0 small text-white-50">You've officially joined your first investment knowledge club!</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Connections / stats grid -->
+    <section class="connections-section py-4">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="connection-card card h-100">
+              <div class="card-body text-center py-3">
+                <img src="assets/avatar-1.jpg" alt="" class="rounded-circle mb-2" width="48" height="48">
+                <p class="card-text small mb-1 fw-semibold">Benard Makodingo</p>
+                <p class="card-text mb-0 display-6 fw-bold">350</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="connection-card card h-100">
+              <div class="card-body text-center py-3">
+                <img src="assets/avatar-2.jpg" alt="" class="rounded-circle mb-2" width="48" height="48">
+                <p class="card-text small mb-1 fw-semibold">kigSmall Foot</p>
+                <p class="card-text mb-0 display-6 fw-bold">225</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="connection-card card h-100">
+              <div class="card-body text-center py-3">
+                <img src="assets/avatar-3.jpg" alt="" class="rounded-circle mb-2" width="48" height="48">
+                <p class="card-text small mb-1 fw-semibold">Caroline Likhol</p>
+                <p class="card-text mb-0 display-6 fw-bold">117</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="connection-card card h-100">
+              <div class="card-body text-center py-3">
+                <img src="assets/avatar-4.jpg" alt="" class="rounded-circle mb-2" width="48" height="48">
+                <p class="card-text small mb-1 fw-semibold">James Mwangi</p>
+                <p class="card-text mb-0 display-6 fw-bold">321</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Intro copy -->
+    <section class="intro-section py-4">
+      <div class="container">
+        <h2 class="h4 fw-bold mb-3">Now let's make you great!</h2>
+        <p class="mb-2">You have shown us where you are doing well and where we can support you to be great! From your profile we recommend these memberships. Pick one that fits you best and start your financial adventure.</p>
+      </div>
+    </section>
+    <!-- Membership blocks (collapsible) -->
+    <section class="membership-section py-4">
+      <div class="container">
+        <div class="membership-block mb-2">
+          <div id="foundation-header" class="membership-header foundation-header py-3 px-3" role="button" tabindex="0" aria-expanded="false" aria-controls="foundation-content">
+            <span class="fw-bold text-uppercase">Foundation Membership</span>
+          </div>
+          <div id="foundation-content" class="membership-content collapse-content">
+            <div class="membership-body py-3 px-3">
+              <p class="mb-0">We invest for you, in shares and in the Mansa-X global fund. Service is free online with your personal representative, but service in the office may have extra charges.</p>
+            </div>
+          </div>
+        </div>
+        <div class="membership-block mb-2">
+          <div id="economy-header" class="membership-header economy-header py-3 px-3" role="button" tabindex="0" aria-expanded="false" aria-controls="economy-content">
+            <span class="fw-bold text-uppercase">Economy Membership</span>
+          </div>
+          <div id="economy-content" class="membership-content collapse-content">
+            <div class="membership-body py-3 px-3">
+              <p class="mb-0">We will invest your money for you at a guaranteed rate with the Mansa-X global fund. Service is free online with your personal representative, but service in the office may have extra charges.</p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-3">
+          <a href="#" class="membership-details-link fw-semibold">A closer look at the memberships details is available here</a>
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <p class="small text-muted mb-0">YourFront Management © 2026. All Rights Reserved.</p>
+      </div>
+      <a href="#" class="chat-bubble" aria-label="Chat support">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="currentColor" class="chat-icon">
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+        </svg>
+      </a>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
