@@ -1,4 +1,4 @@
-# Investment Club – YourFront Management
+# Investment Club – FourFront Management
 
 A frontend submission for an investment club website showcasing membership options and user profile.
 
