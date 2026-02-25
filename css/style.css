@@ -8,9 +8,9 @@
   --header-card-border: #D4AF37;
   --section-bg: #e8e8e8;
   --card-border: #a8a8a8;
-  --foundation-gold: #b8860b;
-  --foundation-gold-hover: #9a7209;
-  --economy-blue: #1a365d;
+  --foundation-gold: #D4A017;
+  --foundation-gold-hover: #E0A800;
+  --economy-blue: #416392;
   --economy-blue-hover: #2c5282;
   --membership-body-bg: #d4d4d4;
   --membership-details-link: #b8860b;
@@ -30,6 +30,10 @@
 body {
   color: var(--text-dark);
   background-color: var(--section-bg);
+}
+
+.app-container {
+  background-color: red;
 }
 
 /* -------------------------------------------------------------------------
@@ -126,7 +130,6 @@ body {
   color: var(--text-dark);
 }
 
-
 /* -------------------------------------------------------------------------
    Intro section
    ------------------------------------------------------------------------- */
@@ -174,7 +177,6 @@ body {
   line-height: 1.55;
   margin-bottom: 0;
 }
-
 
 /* -------------------------------------------------------------------------
    Membership section 
@@ -305,6 +307,5 @@ body {
     max-width: 480px;
   }
 }
-
 
 
