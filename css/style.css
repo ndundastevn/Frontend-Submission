@@ -126,16 +126,55 @@ body {
   color: var(--text-dark);
 }
 
+
 /* -------------------------------------------------------------------------
    Intro section
    ------------------------------------------------------------------------- */
 .intro-section {
   background-color: var(--section-bg);
+  margin-top: 0px;
+  margin-bottom: 18px;
 }
 
-.intro-section h2 {
-  color: var(--text-dark);
+.intro-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+.intro-card.dark-card {
+  background-color: var(--header-card-bg);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.intro-card.dark-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.intro-title {
+  font-size: 17px;
+  font-weight: 700;  
+  color: var(--header-card-border);
+  margin-bottom: 11px;
+  margin-top: 0;
+}
+
+.into-start-text {  
+  color: var(--header-card-border); 
+}
+
+.intro-paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--welcome-text);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
 
 /* -------------------------------------------------------------------------
    Membership section – full-width header bars, collapsible content
