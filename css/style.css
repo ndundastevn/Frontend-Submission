@@ -15,6 +15,8 @@
   --membership-body-bg: #d4d4d4;
   --membership-details-link: #b8860b;
   --chat-green: #22c55e;
+  --fab-green: #25D366;
+  --footer-text: #A0A0A0;
   --text-dark: #1f2937;
   --welcome-text: #D1D1D1;
   /* Stat card pastels */
@@ -33,7 +35,7 @@ body {
 }
 
 .app-container {
-  background-color: red;
+  /* background-color: red; */
 }
 
 /* -------------------------------------------------------------------------
@@ -136,7 +138,7 @@ body {
 .intro-section {
   background-color: var(--section-bg);
   margin-top: 0px;
-  margin-bottom: 18px;
+  margin-bottom: 18px;  
 }
 
 .intro-wrapper {
@@ -278,6 +280,54 @@ body {
   color: var(--foundation-gold-hover);
 }
 
+/* -------------------------------------------------------------------------
+   Footer – minimal, dark, same width as other sections
+   ------------------------------------------------------------------------- */
+.footer {
+  background-color: var(--foundation-gold);
+  margin-top: 22px;  
+  padding: 16px 1rem 20px;
+  position: relative;
+  border-radius: 0 0 18px 18px;
+}
+
+.footer-text {
+  font-size: 11px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Floating action button – WhatsApp style, anchored to footer/section width */
+.fab {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--fab-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fab:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.fab-icon {
+  width: 28px;
+  height: 28px;
+}
 
 /* -------------------------------------------------------------------------
    Responsive: narrow centered container, slightly larger on medium/large
@@ -285,7 +335,8 @@ body {
 @media (min-width: 576px) {
   .header-stats-wrapper,
   .intro-wrapper,
-  .membership-wrapper {
+  .membership-wrapper,
+  .footer {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -295,7 +346,8 @@ body {
 @media (min-width: 768px) {
   .header-stats-wrapper,
   .intro-wrapper,
-  .membership-wrapper {
+  .membership-wrapper,
+  .footer {
     max-width: 440px;
   }
 }
@@ -303,9 +355,8 @@ body {
 @media (min-width: 992px) {
   .header-stats-wrapper,
   .intro-wrapper,
-  .membership-wrapper {
+  .membership-wrapper,
+  .footer {
     max-width: 480px;
   }
 }
-
-
